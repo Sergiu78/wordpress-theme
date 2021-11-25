@@ -107,10 +107,9 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3">
-                        <a href="#" class="footer__logo">
-                            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/logo.svg" alt="мир детства" class="footer__logo-img">
-                            <div class="footer__logo-text">мир детства</div>
-                        </a>
+                        <div class="footer__logo">
+                            <?php the_custom_logo(); ?>
+                        </div>
                     </div>
                     <div class="col-md-4 col-lg-3">
                         <div class="footer__social">
@@ -141,8 +140,8 @@
                             <div class="footer__contacts-item">
                                 <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/phone.svg" alt="телефон" class="footer__contacts-logo">
                                 <div class="footer__contacts-tel">
-                                    <a href="tel:+797867834347">+797867834347</a>
-                                    <a href="tel:+797867834358">+797867834358</a>
+                                    <a href="<?php the_field('phone_1'); ?>"><?php the_field('phone_1'); ?></a>
+                                    <a href="<?php the_field('phone_2'); ?>"><?php the_field('phone_2'); ?></a>
                                 </div>
                             </div>
                             <div class="footer__contacts-item">
